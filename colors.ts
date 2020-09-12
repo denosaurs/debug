@@ -20,6 +20,6 @@ function hashCode(s: string): number {
 }
 
 export function generateColor(message: string): ColorFunction {
-  const hash = hashCode(message);
+  const hash = Math.abs(hashCode(message));
   return colorFunctions[hash % colorFunctions.length];
 }

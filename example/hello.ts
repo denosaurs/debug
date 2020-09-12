@@ -1,16 +1,16 @@
-import { debug, withoutEnv } from "../mod.ts";
+import { debug } from "../mod.ts";
 
-withoutEnv([/worker:(a|b)/]);
+import { Application } from "https://deno.land/x/oak@v6.1.0/mod.ts";
 
-const logA = debug("worker:a");
-const logB = debug("worker:b");
-const logC = debug("service");
+const log = debug("app");
+const name = "My Awesome App";
 
-logC.self.enabled = true;
+const app = new Application();
 
-for (let i = 0; i < 5; i++) {
-  logA("Hello World");
-  logB("Hello World");
-  logC("Hello World");
-  await new Promise((resolve) => setTimeout(resolve, 200));
-}
+app.use((ctx) => {
+  log("%s %s", ctx.request.method, ctx.request.url.pathname);
+  ctx.response.body = "Hello World!";
+});
+
+log("Starting %s...", name);
+await app.listen({ port: 8000 });

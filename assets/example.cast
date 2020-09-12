@@ -1,0 +1,9 @@
+{"version": 2, "width": 105, "height": 41, "timestamp": 1599955843, "env": {"SHELL": "/bin/zsh", "TERM": "xterm-256color"}}
+[0, "o", "$ DEBUG=app deno run --allow-env script.ts\r\n"]
+[0.273927, "o", "\u001b[34mapp\u001b[39m Starting My Awesome App... \u001b[34m+0ms\u001b[39m\r\n"]
+[0.755154, "o", "\u001b[34mapp\u001b[39m GET /hello \u001b[34m+583ms\u001b[39m\r\n"]
+[1.266938, "o", "\u001b[34mapp\u001b[39m GET /world \u001b[34m+511ms\u001b[39m\r\n"]
+[1.78001, "o", "\u001b[34mapp\u001b[39m GET /debug \u001b[34m+514ms\u001b[39m\r\n"]
+[2.293136, "o", "\u001b[34mapp\u001b[39m GET /is \u001b[34m+513ms\u001b[39m\r\n"]
+[2.804962, "o", "\u001b[34mapp\u001b[39m GET /awesome \u001b[34m+511ms\u001b[39m\r\n"]
+[5.644236, "o", "^C"]

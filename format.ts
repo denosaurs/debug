@@ -10,7 +10,9 @@ export function format(f: string, ...args: unknown[]) {
       case "%d":
         return Number(args[i++]).toString();
       case "%o":
-        return Deno.inspect(args[i++]).replace("\n", " ");
+        return Deno.inspect(args[i++]).split("\n").map((_) => _.trim()).join(
+          " ",
+        );
       case "%O":
         return Deno.inspect(args[i++]);
       case "%j":
