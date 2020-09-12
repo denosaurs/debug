@@ -6,7 +6,7 @@ const logA = debug("worker:a");
 const logB = debug("worker:b");
 const logC = debug("service");
 
-// logC.self.enabled = true;
+logC.self.enabled = true;
 
 for (let i = 0; i < 5; i++) {
   logA("Hello World");

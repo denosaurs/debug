@@ -51,7 +51,7 @@ function extract(opts?: string): RegExp[] {
 let manager: DebugManager;
 
 export function withoutEnv(enabled?: RegExp[] | string) {
-  if (!enabled) enabled = [/.+/];
+  if (!enabled) enabled = [];
   if (typeof enabled === "string") enabled = extract(enabled);
   manager = new DebugManager(enabled);
 }

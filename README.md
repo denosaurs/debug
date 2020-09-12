@@ -15,6 +15,10 @@ for (let i = 0; i < 5; i++) {
 }
 ```
 
+```
+$ DEBUG=worker deno run --allow-env script.ts
+```
+
 ## Maintainers
 
 - Filippo Rossi ([@qu4k](https://github.com/qu4k))
