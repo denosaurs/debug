@@ -1,4 +1,3 @@
-import { createHash } from "https://deno.land/std@0.68.0/hash/mod.ts";
 import { colors } from "./deps.ts";
 
 export type ColorFunction = (message: string) => string;
