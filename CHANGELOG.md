@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog],
 and this project adheres to [Semantic Versioning].
 
+## [0.2.0] - 2020-09-15
+
+### Bug Fixes
+
+- deno 1.4.0 support ([`a111891`])
+
 ## [0.1.1] - 2020-09-13
 
 ### Features
@@ -23,6 +29,8 @@ and this project adheres to [Semantic Versioning].
 
 [keep a changelog]: https://keepachangelog.com/en/1.0.0/
 [semantic versioning]: https://semver.org/spec/v2.0.0.html
+[0.2.0]: https://github.com/denosaurs/debug/compare/0.1.1...0.2.0
+[`a111891`]: https://github.com/denosaurs/debug/commit/a1118913fecda01aeb46b97a4659761271d27077
 [0.1.1]: https://github.com/denosaurs/debug/compare/0.1.0...0.1.1
 [`4c11d60`]: https://github.com/denosaurs/debug/commit/4c11d60d3be77f188376b1dcd57cff1254c41b7e
 [0.1.0]: https://github.com/denosaurs/debug/compare/0.1.0
